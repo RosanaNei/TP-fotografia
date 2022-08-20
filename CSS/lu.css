@@ -36,7 +36,7 @@ h2{
     height: 3rem;
     background-image: url(../imgs/volver_006.jpg);
     background-size: contain;
-    margin: 0 auto;
+    margin: 1rem auto 0;
     line-height: 1rem;
     justify-content: center;
     font-size: 2rem;
@@ -51,4 +51,32 @@ h2{
 .volver a:hover{
     opacity: 0;
     }
+.galeria{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: .5rem;
+    padding: .5rem .5rem 0;
+    background-color: #3b3634;
+    }
     
+.material-placeholder{
+    max-width:100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+.galeria img{
+    border-radius: .2rem;
+    width: 100%;
+    }
+    
+.galeria img:hover{
+    cursor: pointer;
+    }    
+.nota, #nota{
+    display: none;
+}
