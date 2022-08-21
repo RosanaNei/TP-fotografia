@@ -20,16 +20,14 @@ body{
     height: auto;
     padding:0 5rem ;
     justify-items: center;
-
     }
  .encabezado{
     text-align: center;
     width: 100%;
-    margin: 0;
+    margin:1rem auto .5rem;
     padding: 0;
-    max-height: 2.6rem;
     }
-h2{
+.titulo{
     color:rgb(117, 114, 114);
     font-size:1.8rem ;  
     }
@@ -38,7 +36,7 @@ h2{
     height: 2rem;
     background-image: url(../imgs/volver_006.jpg);
     background-size: contain;
-    margin: 1rem auto 0;
+    margin: 0 auto 1rem;
     line-height: 1rem;
     justify-content: center;
     font-size: 2rem;
@@ -120,5 +118,44 @@ h2{
 @media only screen and (min-width: 601px){
     .nota {
         width: 85%;
+    }
+}
+@media only screen and (max-width: 769px){
+    html{
+        font-size: 18px;
+    }
+    .galeria{
+        width: 60%;
+        grid-template-columns: 1fr  ;
+        align-content: center;
+        }
+        .material-placeholder{
+            max-width:100%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            }
+    #ultima{
+        grid-column:  1/3;
+    }
+    .nota {
+        width: 60%;
+    }
+ }  
+@media only screen and (max-width: 480px){
+    html{
+        font-size: 15px;
+    }
+    .galeria{
+        width: 70%;
+        grid-template-columns: 1fr;
+    }
+    #ultima{
+    grid-column:  1/2;
+    }
+    .nota{
+        width: 70%;
     }
 }
