@@ -15,6 +15,8 @@ body{
     background-color:#161414 ;
     }
 .wrapper{
+    width: 70%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
     height: auto;
@@ -52,7 +54,7 @@ body{
     opacity: 0;
     }
 .galeria{
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -61,12 +63,14 @@ body{
     background-color: #3b3634;
     }
 .galeria img{
+    border-radius: .2rem;
+    width: 100%;
     transition: all .3s;
-}
+    }
 .galeria img:hover{
     cursor: pointer;
     scale: 1.07;
-}
+    }
 .vertical{
     display: flex;
     flex-wrap: wrap;
@@ -84,14 +88,9 @@ body{
     justify-content: center;
     align-items: center;
     }
-.galeria img{
-    border-radius: .2rem;
-    width: 100%;
-    }
 .nota{
-    width: 70%;
-    max-width: 45rem;
-    padding: .6rem;
+    width: 100%;
+    padding: .5rem;
     margin-bottom: 3rem;
     background-color: #131010;
     color:rgb(204, 203, 203);
@@ -100,7 +99,7 @@ body{
     height: auto;
     gap: 2rem; 
     justify-content: center;
-}
+    }
 #dropbtn{
     background-color: #3b3634;
     border: 0;
@@ -116,7 +115,7 @@ body{
 #dropbtn:hover{
     filter: brightness(1.5);
     cursor: pointer;
-}
+    }
 #myP {
     display: none;
     width: 100%;
@@ -127,33 +126,29 @@ body{
     padding: .5rem;
     font-size: .7rem;
     justify-self: center;
-  }
+    }
 
 /*---MEDIA QUERIES---*/
-@media only screen and (min-width: 601px){
-    .nota {
-        width: 85%;
-    }
-}
 @media only screen and (max-width: 769px){
     html{
         font-size: 18px;
     }
-    .galeria{
+    .wrapper{
         width: 60%;
+    }
+    .galeria{       
         grid-template-columns: 1fr  ;
         align-content: center;
         }
-    .nota {
-        width: 60%;
-    }
- }  
+     }  
 @media only screen and (max-width: 480px){
     html{
         font-size: 15px;
     }
+    .wrapper{
+        width: 70%; 
+    }
     .galeria{
-        width: 70%;
         grid-template-columns: 1fr;
     }
     .nota{
