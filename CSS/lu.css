@@ -94,7 +94,7 @@ body{
 .nota{
     width: 70%;
     max-width: 45rem;
-    padding: .6rem 1rem;
+    padding: .6rem;
     margin-bottom: 3rem;
     background-color: #131010;
     color:rgb(204, 203, 203);
@@ -103,6 +103,7 @@ body{
     height: auto;
     gap: 2rem; 
     justify-content: center;
+    
 }
 #dropbtn{
     background-color: #3b3634;
@@ -123,13 +124,12 @@ body{
     display: none;
     width: 100%;
     text-align: left;
-    margin: 1rem;
-    margin: .5rem;
+    margin: .6rem;
     background-color:#938686;
     color:#131010;
     padding: .5rem;
     font-size: .7rem;
-
+    justify-self: center;
   }
 
 /*---MEDIA QUERIES---*/
@@ -158,9 +158,6 @@ body{
     .galeria{
         width: 70%;
         grid-template-columns: 1fr;
-    }
-    #ultima{
-    grid-column:  1/2;
     }
     .nota{
         width: 70%;
