@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+html{
+    font-size: 20px;
+    }
+body{
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family:'Roboto Mono', monospace,sans-serif;
+    background-color:"rgb(158, 25, 25)";
+    }
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: auto;
+    padding:0 5rem ;
+    justify-items: center;
+    }
+ .encabezado{
+    text-align: center;
+    width: 100%;
+    margin:1rem auto .5rem;
+    padding: 0;
+    }
+.titulo{
+    color:black;
+    font-size:1.8rem ;  
+    }
+.volver {
+    width: 2rem;
+    height: 2rem;
+    background-image: url(../imgs/volver_006.jpg);
+    background-size: contain;
+    margin: 0 auto 1rem;
+    line-height: 1rem;
+    justify-content: center;
+    font-size: 2rem;
+    transition: all.5s;
+    }
+.volver:hover{
+    filter: brightness(1.5);
+    }
+.volver a{
+    color: #3dd797;
+    }
+.volver a:hover{
+    opacity: 0;
+    }
+.galeria{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .5rem;
+    padding: .5rem .5rem 0;
+    background-color: #12485a;
+    }
+.galeria img{
+    transition: all .3s;
+    }
+.galeria img:hover{
+    scale: 1.07;
+    }
