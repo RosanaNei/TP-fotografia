@@ -5,18 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		outDuration: 100
 	});
 });
-
-function toggle(){
-	var x = document.getElementById("nota");
-	if (x.style.display === "none") {
-	  x.style.display = "block";
-	} else {
-	  x.style.display = "none";
-	}
-  }
   
-  
-  function cambiar() {
+function cambiar() {
 	var x = document.getElementById("myP");
 	if (x.style.display === "none") {
 	  x.style.display = "block";
