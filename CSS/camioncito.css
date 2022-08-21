@@ -34,7 +34,7 @@ body{
 .volver {
     width: 2rem;
     height: 2rem;
-    background-image: url(../imgs/volver_006.jpg);
+    background-image: url(../imgs/volver2.jpg);
     background-size: contain;
     margin: 0 auto 1rem;
     line-height: 1rem;
@@ -46,7 +46,7 @@ body{
     filter: brightness(1.5);
     }
 .volver a{
-    color: #3dd797;
+    color: #ebef06;
     }
 .volver a:hover{
     opacity: 0;
