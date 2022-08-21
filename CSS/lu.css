@@ -114,12 +114,22 @@ body{
     line-height: normal;
     overflow: visible;
     padding: .2rem;
+    transition: all .5s;
     }  
+#dropbtn:hover{
+    filter: brightness(1.5);
+}
 #myP {
     display: none;
     width: 100%;
     text-align: left;
     margin: 1rem;
+    margin: .5rem;
+    background-color:#938686;
+    color:#131010;
+    padding: .5rem;
+    font-size: .7rem;
+
   }
 
 /*---MEDIA QUERIES---*/
