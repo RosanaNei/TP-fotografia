@@ -14,24 +14,24 @@ body{
     font-family:'Roboto Mono', monospace,sans-serif;
     background-color:#161414 ;
     }
-.caja{
+.wrapper{
     display: grid;
     grid-template-columns: 1fr;
     height: auto;
     padding:0 5rem ;
-    gap: 2rem; 
-    justify-content: center;
+    justify-items: center;
+
     }
  .encabezado{
     text-align: center;
     width: 100%;
     margin: 0;
     padding: 0;
-    max-height: 3rem;
+    max-height: 2.6rem;
     }
 h2{
     color:rgb(117, 114, 114);
-    font-size:2rem ;  
+    font-size:1.8rem ;  
     }
 .volver {
     width: 2rem;
@@ -79,11 +79,6 @@ h2{
     justify-content: center;
     align-items: center;
     }
-.caption{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-}
 .galeria img{
     border-radius: .2rem;
     width: 100%;
@@ -93,7 +88,15 @@ h2{
     cursor: pointer;
     }  
 .nota{
-
+    width: 90%;
+    padding: .6rem 1rem;
+    background-color: #131010;
+    color:rgb(204, 203, 203);
+    display: grid;
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 2rem; 
+    justify-content: center;
 }
 #dropbtn{
     background-color: #3b3634;
@@ -101,16 +104,21 @@ h2{
     color:rgb(204, 203, 203);
     font: inherit;
     font-size: .7rem;
-    align-self: flex-start;
+    justify-self: left;
     line-height: normal;
     overflow: visible;
-    padding: 0;
+    padding: .2rem;
     }  
 #myP {
     display: none;
     width: 100%;
-    padding: 50px 0;
-    text-align: center;
-    background-color: lightblue;
-    margin-top: 20px;
+    text-align: left;
+    margin: 1rem;
   }
+
+/*---MEDIA QUERIES---*/
+@media only screen and (min-width: 601px){
+    .nota {
+        width: 85%;
+    }
+}
