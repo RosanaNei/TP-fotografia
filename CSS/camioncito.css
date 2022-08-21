@@ -12,7 +12,7 @@ body{
     padding: 0;
     text-align: center;
     font-family:'Roboto Mono', monospace,sans-serif;
-    background-color:"rgb(158, 25, 25)";
+    background-color: #811717;
     }
 .wrapper{
     display: grid;
@@ -66,3 +66,50 @@ body{
 .galeria img:hover{
     scale: 1.07;
     }
+.material-placeholder{
+    max-width:100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+.galeria img{
+    border-radius: .2rem;
+    width: 100%;
+    }
+        
+.galeria img:hover{
+    cursor: pointer;
+    }  
+.nota{
+    width: 70%;
+    max-width: 45rem;
+    padding: .6rem 1rem;
+    margin-bottom: 3rem;
+    background-color:  #12485a;
+    color:rgb(204, 203, 203);
+    display: grid;
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 2rem; 
+    justify-content: center;
+    }
+    #dropbtn{
+        background-color:#659f1f;
+        border: 0;
+        color:antiquewhite;
+        font: inherit;
+        font-size: .7rem;
+        justify-self: left;
+        line-height: normal;
+        overflow: visible;
+        padding: .2rem;
+        }  
+    #myP {
+        display: none;
+        width: 100%;
+        text-align: left;
+        margin: 1rem;
+      }
+    
