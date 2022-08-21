@@ -18,7 +18,7 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     height: auto;
-    padding:0 5rem 5rem 5rem;
+    padding:0 5rem ;
     gap: 2rem; 
     justify-content: center;
     }
@@ -84,7 +84,18 @@ h2{
     flex-wrap: wrap;
     align-items: flex-start;
 }
-.dropbtn{
+.galeria img{
+    border-radius: .2rem;
+    width: 100%;
+    }
+    
+.galeria img:hover{
+    cursor: pointer;
+    }  
+.nota{
+
+}
+#dropbtn{
     background-color: #3b3634;
     border: 0;
     color:rgb(204, 203, 203);
@@ -94,20 +105,9 @@ h2{
     line-height: normal;
     overflow: visible;
     padding: 0;
-}
-.galeria img{
-    border-radius: .2rem;
-    width: 100%;
-    }
-    
-.galeria img:hover{
-    cursor: pointer;
-    }    
-#nota{
-    display:none;
-}
-#myDIV {
-    display:none;
+    }  
+#myP {
+    display: none;
     width: 100%;
     padding: 50px 0;
     text-align: center;
