@@ -134,7 +134,7 @@ body{
         font-size: 18px;
     }
     .wrapper{
-        width: 60%;
+        width: 80%;
     }
     .galeria{       
         grid-template-columns: 1fr  ;
@@ -146,12 +146,9 @@ body{
         font-size: 15px;
     }
     .wrapper{
-        width: 70%; 
+        width: 80%; 
     }
     .galeria{
         grid-template-columns: 1fr;
     }
-    .nota{
-        width: 70%;
-    }
-}
+   }
